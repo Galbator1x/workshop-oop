@@ -1,7 +1,6 @@
 require 'bundler/setup'
 require 'geo'
 require 'geo/cli'
-require 'webmock/rspec'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
