@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'geo/cli'
+require 'geo'
+Geo::CLI.start

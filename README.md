@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Get geo info by your ip
+```sh
+geo get_geo
+```
+
+Get geo info by ip
+```sh
+geo get_geo 134.234.3.2
+```
 
 ## Development
 
