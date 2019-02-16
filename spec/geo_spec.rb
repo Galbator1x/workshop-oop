@@ -11,13 +11,11 @@ RSpec.describe Geo do
   describe 'geo' do
     it 'returns geo info' do
       expected = 'country: United States, city: Sierra Vista, zip: 85613, timezone: America/Phoenix'
-      is_asserted_by { Geo::Geo.geo_info_by_ip('134.234.3.2') == expected }
+      info = Geo::Geo.geo_info_by_ip('134.234.3.2')
+      is_asserted_by { Geo::Geo.pretty_geo_info(info) == expected }
+      info = Geo::Geo.geo_info_by_ip('134.234.3.2')
+      puts info[:city]
+      puts Geo::Geo.pretty_geo_info(info)
     end
-  end
-
-  describe 'cli' do
-    command 'geo get_geo 134.234.3.2'
-    expected = 'country: United States, city: Sierra Vista, zip: 85613, timezone: America/Phoenix'
-    its(:stdout) { is_expected.to include(expected) }
   end
 end

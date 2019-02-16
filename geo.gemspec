@@ -38,7 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0.1"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.8"
-  spec.add_development_dependency "rspec-command", "~> 1.0"
   spec.add_development_dependency "rspec-power_assert"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "webmock", "~> 3.4"
